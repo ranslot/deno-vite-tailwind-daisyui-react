@@ -1,4 +1,4 @@
-# Vite + Deno + React + TypeScript
+# Vite + Deno + React + TypeScript + Tailwind + DaisyUI
 
 ## Running
 
