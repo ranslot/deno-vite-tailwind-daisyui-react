@@ -6,6 +6,9 @@ import reactLogo from "./assets/react.svg";
 function App() {
   const [count, setCount] = useState(0);
 
+  const env = Deno.env.get("env") as string;
+  console.log(env);
+
   return (
     <>
       <img src="/vite-deno.svg" alt="Vite with Deno" />
