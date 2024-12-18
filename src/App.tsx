@@ -3,6 +3,10 @@ import { useState } from "react";
 // @ts-expect-error Unable to infer type at the moment
 import reactLogo from "./assets/react.svg";
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -10,7 +14,7 @@ function App() {
   console.log(env);
 
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <img src="/vite-deno.svg" alt="Vite with Deno" />
       <button className="btn btn-secondary">
         <h1 className="">Hello world! I am Ironman</h1>
@@ -36,7 +40,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more XDD
       </p>
-    </>
+    </QueryClientProvider>
   );
 }
 
