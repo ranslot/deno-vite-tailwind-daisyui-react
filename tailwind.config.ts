@@ -2,12 +2,12 @@
 import daisyui from "daisyui";
 
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["/src/client/index.html", "./src/client/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {},
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["light", "dark", "lemonade", "autumn", "aqua", "nord"],
+    themes: ["dark"],
   },
 };

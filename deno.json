@@ -1,9 +1,10 @@
 {
   "tasks": {
-    "dev": "deno run -A --node-modules-dir npm:vite",
+    "dev": "deno run -A npm:vite",
     "build": "deno run -A --node-modules-dir npm:vite build",
     "preview": "deno run -A --node-modules-dir npm:vite preview",
-    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server src/client/dist/",
+    "listen": "deno run --watch --env-file -E -N -R src/server/server.ts"
   },
   "compilerOptions": {
     "lib": ["ES2020", "DOM", "DOM.Iterable", "deno.ns"],
@@ -13,6 +14,7 @@
   },
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
+    "@tanstack/react-query": "npm:@tanstack/react-query@^5.62.8",
     "@types/react": "npm:@types/react@^18.3.12",
     "@types/react-dom": "npm:@types/react-dom@^18.3.1",
     "@vitejs/plugin-react-swc": "npm:@vitejs/plugin-react-swc@^3.7.1",
@@ -23,7 +25,10 @@
     "react-dom": "npm:react-dom@^18.3.1",
     "tailwindcss": "npm:tailwindcss@^3.4.17",
     "vite": "npm:vite@^6.0.1",
-    "@tanstack/react-query": "https://esm.sh/@tanstack/react-query@5.62.8"
+    "react-hook-form": "https://esm.sh/react-hook-form@7.51.2",
+    "wouter": "https://esm.sh/wouter@3.1.0",
+    "zod": "https://esm.sh/zod@3.22.4",
+    "zustand": "https://esm.sh/zustand@4.5.2"
   },
   "nodeModulesDir": "auto"
 }

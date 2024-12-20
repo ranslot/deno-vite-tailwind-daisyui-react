@@ -9,10 +9,6 @@ const queryClient = new QueryClient();
 
 function App() {
   const [count, setCount] = useState(0);
-
-  const env = Deno.env.get("env") as string;
-  console.log(env);
-
   return (
     <QueryClientProvider client={queryClient}>
       <img src="/vite-deno.svg" alt="Vite with Deno" />
