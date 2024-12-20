@@ -11,17 +11,17 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <QueryClientProvider client={queryClient}>
-      <img src="/vite-deno.svg" alt="Vite with Deno" />
+      <img src="/vite-deno.svg" alt="Vite with Deno" width="248" height="275" />
       <button className="btn btn-secondary">
         <h1 className="">Hello world! I am Ironman</h1>
       </button>
       <div>
         <button className="btn">btn</button>
         <a href="https://vite.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
+          <img src="/vite.svg" alt="Vite logo" width="32" height="32" />
         </a>
         <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+          <img src={reactLogo} alt="React logo" width="36" height="32" />
         </a>
       </div>
       <h1>Vite + React</h1>
