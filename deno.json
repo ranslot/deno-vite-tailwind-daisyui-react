@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno run -A npm:vite",
+    "dev": "deno run --node-modules-dir -A npm:vite",
     "build": "deno run -A --node-modules-dir npm:vite build",
     "preview": "deno run -A --node-modules-dir npm:vite preview",
     "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server src/client/dist/",
