@@ -12,6 +12,7 @@
     "jsxImportSource": "react",
     "jsxImportSourceTypes": "@types/react"
   },
+  "exclude": ["src/client/dist"],
   "imports": {
     "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.0",
     "@tanstack/react-query": "npm:@tanstack/react-query@^5.62.8",
